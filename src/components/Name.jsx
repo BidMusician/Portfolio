@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../assets/images/logo.png';
 import logo_bg from '../assets/images/logo_bg.png';
+import thumb from '../assets/images/left-and-right.png';
 
 const Name = () => {
     const [sliderValue, setSliderValue] = useState(50);
@@ -23,7 +24,7 @@ const Name = () => {
         <style> {`
             .slider {
                 -webkit-appearance: none;
-                height: 1vh;
+                height: 0vh;
                 background: white;
                 outline: none;
                 opacity: 0.7;
@@ -32,16 +33,16 @@ const Name = () => {
             .slider::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
-                width: 5vw;
-                height: 15vh;
-                background: url(${logo}) no-repeat center center;
+                width: 2vw;
+                height: 2vh;
+                background: url(${thumb}) no-repeat center center;
                 background-size: contain;
                 cursor: pointer;
                 position: relative;
             }
 
             .slider::-webkit-slider-thumb:hover {
-                background: url(${logo_bg}) no-repeat center center;
+                background: url(${thumb}) no-repeat center center;
                 background-size: contain;
             }
 
@@ -76,7 +77,7 @@ const Name = () => {
                 bottom: `${window.innerWidth * 104.29 / 1600}px`,
             }}
         />
-        {/* Joshua Wang / JojoTheWarrior */}
+        {/* Name and nickname */}
         <div className="relative w-full h-full flex justify-center z-10">
             <span 
                 className="absolute text-10vmin font-bold text-palette-blue z-20"
@@ -90,7 +91,7 @@ const Name = () => {
                     letterSpacing: '0.03763em'
                 }}
             >
-                Joshua Wang
+                Shuya Wang
             </span>
             <span 
                 className="absolute text-10vmin text-palette-blue z-20"
@@ -103,7 +104,7 @@ const Name = () => {
                     100% 0%)` 
                 }}
             >
-                JojoTheWarrior
+                BidMusician
             </span>
         </div>
     </div>
