@@ -1,5 +1,6 @@
 import React from 'react'
 import temp_pfp from '../assets/images/temp_pfp.jpeg';
+import pfp from '../assets/images/physique.jpg';
 
 const AboutMe = () => {
   return (
@@ -13,7 +14,7 @@ const AboutMe = () => {
               <p className="text-2xl">I'm a Grade 12 student at Earl Haig SS.</p>
             </div>
             <div className="">
-              <img src={temp_pfp} className="h-30vh"/>
+              <img src={pfp} className="h-30vh"/>
             </div>
         </div>
       </div>
